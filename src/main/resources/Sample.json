@@ -1,0 +1,11 @@
+{
+  "name": "Bharath",
+  "address": {
+    "door": "254A1/12D",
+    "street": "Perumal Nager",
+    "area":"Parvathipuram",
+    "city": "Nagercoil",
+    "state": "TN"
+  },
+  "dob": "02-06-1989"
+}
