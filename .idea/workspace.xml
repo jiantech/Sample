@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5779a22a-8b7b-4fe6-9780-a52c9cfc9a23" name="Default Changelist" comment="Exception Handling">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CSVhandling/CSVHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CSVhandling/DataHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filehandling/TestFileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonhandling/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonhandling/BasicProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonhandling/JsonMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jsonhandling/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threading/Sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5779a22a-8b7b-4fe6-9780-a52c9cfc9a23" name="Default Changelist" comment="File Handling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SampleClass/NumberManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/XLHandling/ExcelExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/XLHandling/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Test.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -69,14 +62,14 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Tutorial\Projects\Sample\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Tutorial\Projects\Sample\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Tutorial\Projects\Sample\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.CSVHandler">
+  <component name="RunManager" selected="Application.ExcelExecution">
     <configuration name="CSVHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CSVhandling.CSVHandler" />
       <module name="Sample" />
@@ -90,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Executor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LambdaSamples.Executor" />
+    <configuration name="ExcelExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="XLHandling.ExcelExecution" />
       <module name="Sample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LambdaSamples.*" />
+          <option name="PATTERN" value="XLHandling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threading.Sample" />
+    <configuration name="NumberManipulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SampleClass.NumberManipulation" />
       <module name="Sample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threading.*" />
+          <option name="PATTERN" value="SampleClass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExcelExecution" />
+        <item itemvalue="Application.NumberManipulation" />
         <item itemvalue="Application.CSVHandler" />
         <item itemvalue="Application.JsonMapping" />
         <item itemvalue="Application.TestFileHandler" />
-        <item itemvalue="Application.Sample" />
-        <item itemvalue="Application.Executor" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596735429334</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="File Handling">
+      <created>1597685285412</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597685285412</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,81 +218,86 @@
     <MESSAGE value="Loops and Recursion" />
     <MESSAGE value="collections" />
     <MESSAGE value="Exception Handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception Handling" />
+    <MESSAGE value="File Handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="File Handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1597685031644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597685031644" />
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598071637212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598071637212" />
     <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1595913600971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595913600971" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1597685157406">
+    <state width="1877" height="467" key="GridCell.Tab.0.bottom" timestamp="1599152460399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1594661903505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1594661903505" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1597685157406">
+    <state width="1877" height="467" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599152460399" />
+    <state width="1877" height="467" key="GridCell.Tab.0.center" timestamp="1599152460398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1594661903505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1594661903505" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1597685157406">
+    <state width="1877" height="467" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599152460398" />
+    <state width="1877" height="467" key="GridCell.Tab.0.left" timestamp="1599152460398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1594661903504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1594661903504" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1597685157406">
+    <state width="1877" height="467" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599152460398" />
+    <state width="1877" height="467" key="GridCell.Tab.0.right" timestamp="1599152460398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1594661903505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1921" height="272" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1594661903505" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597685157406">
+    <state width="1877" height="467" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599152460398" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599152382286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597685157406">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599152382286" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599152382286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597685157406">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599152382286" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599152382286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597685157406">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599152382286" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599152382286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597685157406" />
-    <state x="648" y="109" key="SettingsEditor" timestamp="1597681748342">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599152382286" />
+    <state x="648" y="109" key="SettingsEditor" timestamp="1598287482633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="SettingsEditor.inPresentationMode" timestamp="1594661578787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="SettingsEditor.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1594661578787" />
-    <state x="648" y="109" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597681748342" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1596735431673">
+    <state x="648" y="109" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598287482633" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597685527826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596735431673" />
-    <state x="342" y="140" key="new project wizard" timestamp="1595913608073">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597685527826" />
+    <state x="342" y="140" key="new project wizard" timestamp="1598367663094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595913608073" />
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1598367663094" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,6 +337,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/CSVhandling/CSVHandler.java</url>
           <line>32</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/XLHandling/ExcelReader.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/XLHandling/ExcelExecution.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/XLHandling/ExcelReader.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/XLHandling/ExcelReader.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
